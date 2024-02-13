@@ -24,7 +24,7 @@ class ResultimcActivity : AppCompatActivity() {
     }
 
     private fun initListeners() {
-        btnRecalculate.setOnClickListener { onBackPressed() }
+        btnRecalculate.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
     }
 
     private fun initUI(result: Double) {
